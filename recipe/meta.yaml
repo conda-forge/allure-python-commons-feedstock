@@ -1,5 +1,5 @@
 {% set name = "allure-python-commons" %}
-{% set version = "2.9.45" %}
+{% set version = "2.10.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c238d28aeac35e8c7c517d8a2327e25ae5bbf2c30b5e2313d20ef11d75f5549d
+  sha256: d4d31344b0f0037a4a11e16b91b28cf0eeb23ffa0e50c27fcfc6aabe72212d3c
 
 build:
   noarch: python
@@ -18,13 +18,13 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.4
+    - python >=3.5
     - setuptools
     - setuptools_scm
   run:
     - attrs >=16.0.0
     - pluggy >=0.4.0
-    - python >=3.4
+    - python >=3.5
     - six >=1.9.0
 
 test:
