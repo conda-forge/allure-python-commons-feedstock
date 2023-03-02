@@ -1,11 +1,11 @@
-About allure-python-commons
-===========================
+About allure-python-commons-feedstock
+=====================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/allure-python-commons-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/allure-framework/allure-python
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/allure-python-commons-feedstock/blob/main/LICENSE.txt)
 
 Summary: Common module for integrate allure with python-based frameworks
 
