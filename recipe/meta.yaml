@@ -1,5 +1,5 @@
 {% set name = "allure-python-commons" %}
-{% set version = "2.13.0" %}
+{% set version = "2.13.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c3a205435420fb93f0144fb66bf7ed77318b08b0ad62940f2987e7c71e4e56d7
+  sha256: 3fc13e1da8ebb23f9ab5c9c72ad04595023cdd5078dbb8604939997faebed5cb
 
 build:
   noarch: python
