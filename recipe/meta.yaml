@@ -113,7 +113,7 @@ about:
   home: https://github.com/allure-framework/allure-python
   license: Apache-2.0
   license_file: LICENSE
-  summary: Common module for integrate allure with python-based frameworks
+  summary: Allure integrations for Python test frameworks
 
 extra:
   recipe-maintainers:
