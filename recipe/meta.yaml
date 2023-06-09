@@ -1,4 +1,4 @@
-{% set name = "allure-python-commons" %}
+{% set name = "allure-python" %}
 {% set version = "2.13.2" %}
 
 
@@ -7,29 +7,107 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8a03681330231b1deadd86b97ff68841c6591320114ae638570f1ed60d7a2033
+  git_url: https://github.com/allure-framework/{{ name }}.git
+  git_tag: {{ version }}
 
 build:
   noarch: python
   number: 0
-  script: {{ PYTHON }} -m pip install . -vv
 
-requirements:
-  host:
-    - pip
-    - python >=3.6
-    - setuptools
-    - setuptools_scm
-  run:
-    - attrs >=16.0.0
-    - pluggy >=0.4.0
-    - python >=3.6
-
-test:
-  imports:
-    - allure
-    - allure_commons
+outputs:
+  - name: allure-python-commons
+    script: install.sh  # [unix]
+    script: install.bat  # [win]
+    requirements:
+      host:
+        - pip
+        - python >=3.6
+        - setuptools-scm
+      run:
+        - python >=3.6
+        - attrs >=16.0.0
+        - pluggy >=0.4.0
+    test:
+      imports:
+        - allure
+        - allure_commons
+  - name: allure-behave
+    script: install.sh  # [unix]
+    script: install.bat  # [win]
+    requirements:
+      host:
+        - pip
+        - python >=3.6
+        - setuptools-scm
+      run:
+        - python >=3.6
+        - behave >=1.2.5
+        - {{ pin_subpackage('allure-python-commons', exact=True) }}
+    test:
+      imports:
+        - allure_behave
+  - name: allure-nose2
+    script: install.sh  # [unix]
+    script: install.bat  # [win]
+    requirements:
+      host:
+        - pip
+        - python >=3.6
+        - setuptools-scm
+      run:
+        - python >=3.6
+        - nose2
+        - {{ pin_subpackage('allure-python-commons', exact=True) }}
+    test:
+      imports:
+        - allure_nose2
+  - name: allure-pytest
+    script: install.sh  # [unix]
+    script: install.bat  # [win]
+    requirements:
+      host:
+        - pip
+        - python >=3.6
+        - setuptools-scm
+      run:
+        - python >=3.6
+        - pytest >=4.5.0
+        - {{ pin_subpackage('allure-python-commons', exact=True) }}
+    test:
+      imports:
+        - allure_pytest
+  - name: allure-pytest-bdd
+    script: install.sh  # [unix]
+    script: install.bat  # [win]
+    requirements:
+      host:
+        - pip
+        - python >=3.6
+        - setuptools-scm
+      run:
+        - python >=3.6
+        - pytest >=4.5.0
+        - pytest-bdd >=3.0.0
+        - {{ pin_subpackage('allure-python-commons', exact=True) }}
+    test:
+      imports:
+        - allure_pytest_bdd
+  - name: allure-robotframework
+    script: install.sh  # [unix]
+    script: install.bat  # [win]
+    requirements:
+      host:
+        - pip
+        - python >=3.6
+        - setuptools-scm
+      run:
+        - python >=3.6
+        - robotframework
+        - {{ pin_subpackage('allure-python-commons', exact=True) }}
+    test:
+      imports:
+        - AllureLibrary
+        - allure_robotframework
 
 about:
   home: https://github.com/allure-framework/allure-python
