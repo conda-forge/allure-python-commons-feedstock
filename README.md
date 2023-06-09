@@ -1,5 +1,5 @@
-About allure-python-commons-feedstock
-=====================================
+About allure-python-feedstock
+=============================
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/allure-python-commons-feedstock/blob/main/LICENSE.txt)
 
@@ -7,17 +7,50 @@ Home: https://github.com/allure-framework/allure-python
 
 Package license: Apache-2.0
 
-Summary: Common module for integrate allure with python-based frameworks
+Summary: Allure integrations for Python test frameworks
 
 Current build status
 ====================
 
 
-<table><tr><td>All platforms:</td>
+<table>
+    
+  <tr>
+    <td>Azure</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11525&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/allure-python-commons-feedstock?branchName=main">
-      </a>
+      <details>
+        <summary>
+          <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11525&branchName=main">
+            <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/allure-python-commons-feedstock?branchName=main">
+          </a>
+        </summary>
+        <table>
+          <thead><tr><th>Variant</th><th>Status</th></tr></thead>
+          <tbody><tr>
+              <td>linux_64</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11525&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/allure-python-commons-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11525&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/allure-python-commons-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_64</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11525&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/allure-python-commons-feedstock?branchName=main&jobName=win&configuration=win%20win_64_" alt="variant">
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </details>
     </td>
   </tr>
 </table>
@@ -27,53 +60,58 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-allure--behave-green.svg)](https://anaconda.org/conda-forge/allure-behave) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/allure-behave.svg)](https://anaconda.org/conda-forge/allure-behave) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/allure-behave.svg)](https://anaconda.org/conda-forge/allure-behave) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/allure-behave.svg)](https://anaconda.org/conda-forge/allure-behave) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-allure--nose2-green.svg)](https://anaconda.org/conda-forge/allure-nose2) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/allure-nose2.svg)](https://anaconda.org/conda-forge/allure-nose2) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/allure-nose2.svg)](https://anaconda.org/conda-forge/allure-nose2) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/allure-nose2.svg)](https://anaconda.org/conda-forge/allure-nose2) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-allure--pytest-green.svg)](https://anaconda.org/conda-forge/allure-pytest) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/allure-pytest.svg)](https://anaconda.org/conda-forge/allure-pytest) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/allure-pytest.svg)](https://anaconda.org/conda-forge/allure-pytest) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/allure-pytest.svg)](https://anaconda.org/conda-forge/allure-pytest) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-allure--pytest--bdd-green.svg)](https://anaconda.org/conda-forge/allure-pytest-bdd) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/allure-pytest-bdd.svg)](https://anaconda.org/conda-forge/allure-pytest-bdd) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/allure-pytest-bdd.svg)](https://anaconda.org/conda-forge/allure-pytest-bdd) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/allure-pytest-bdd.svg)](https://anaconda.org/conda-forge/allure-pytest-bdd) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-allure--python--commons-green.svg)](https://anaconda.org/conda-forge/allure-python-commons) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/allure-python-commons.svg)](https://anaconda.org/conda-forge/allure-python-commons) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/allure-python-commons.svg)](https://anaconda.org/conda-forge/allure-python-commons) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/allure-python-commons.svg)](https://anaconda.org/conda-forge/allure-python-commons) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-allure--robotframework-green.svg)](https://anaconda.org/conda-forge/allure-robotframework) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/allure-robotframework.svg)](https://anaconda.org/conda-forge/allure-robotframework) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/allure-robotframework.svg)](https://anaconda.org/conda-forge/allure-robotframework) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/allure-robotframework.svg)](https://anaconda.org/conda-forge/allure-robotframework) |
 
-Installing allure-python-commons
-================================
+Installing allure-python
+========================
 
-Installing `allure-python-commons` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `allure-python` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
 conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `allure-python-commons` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `allure-behave, allure-nose2, allure-pytest, allure-pytest-bdd, allure-python-commons, allure-robotframework` can be installed with `conda`:
 
 ```
-conda install allure-python-commons
-```
-
-or with `mamba`:
-
-```
-mamba install allure-python-commons
-```
-
-It is possible to list all of the versions of `allure-python-commons` available on your platform with `conda`:
-
-```
-conda search allure-python-commons --channel conda-forge
+conda install allure-behave allure-nose2 allure-pytest allure-pytest-bdd allure-python-commons allure-robotframework
 ```
 
 or with `mamba`:
 
 ```
-mamba search allure-python-commons --channel conda-forge
+mamba install allure-behave allure-nose2 allure-pytest allure-pytest-bdd allure-python-commons allure-robotframework
+```
+
+It is possible to list all of the versions of `allure-behave` available on your platform with `conda`:
+
+```
+conda search allure-behave --channel conda-forge
+```
+
+or with `mamba`:
+
+```
+mamba search allure-behave --channel conda-forge
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search allure-python-commons --channel conda-forge
+mamba repoquery search allure-behave --channel conda-forge
 
-# List packages depending on `allure-python-commons`:
-mamba repoquery whoneeds allure-python-commons --channel conda-forge
+# List packages depending on `allure-behave`:
+mamba repoquery whoneeds allure-behave --channel conda-forge
 
-# List dependencies of `allure-python-commons`:
-mamba repoquery depends allure-python-commons --channel conda-forge
+# List dependencies of `allure-behave`:
+mamba repoquery depends allure-behave --channel conda-forge
 ```
 
 
@@ -118,17 +156,17 @@ Terminology
                   produce the finished article (built conda distributions)
 
 
-Updating allure-python-commons-feedstock
-========================================
+Updating allure-python-feedstock
+================================
 
-If you would like to improve the allure-python-commons recipe or build a new
+If you would like to improve the allure-python recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the conda-forge/allure-python-commons-feedstock are
+Note that all branches in the conda-forge/allure-python-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks and branches in the main repository should only be used to
 build distinct package versions.
